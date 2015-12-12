@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+LXD_KVO.h"
+#import "LXD_ObservedObject.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    LXD_ObservedObject * object = [LXD_ObservedObject new];
+    [object LXD_addObserver: self forKey: @"observedNum" withBlock: ^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
+        
+        NSLog(@"Value had changed yet");
+    }];
+    
+    object.observedNum = @10;
 }
 
 - (void)didReceiveMemoryWarning {

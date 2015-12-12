@@ -14,6 +14,8 @@
 		EF324E1A1AB5298300069547 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF324E191AB5298300069547 /* Images.xcassets */; };
 		EF324E1D1AB5298300069547 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF324E1B1AB5298300069547 /* LaunchScreen.xib */; };
 		EF324E291AB5298300069547 /* LXD_KeyValueObserveDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF324E281AB5298300069547 /* LXD_KeyValueObserveDemoTests.m */; };
+		EF324E341AB52AFD00069547 /* NSObject+LXD_KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = EF324E331AB52AFD00069547 /* NSObject+LXD_KVO.m */; };
+		EFD71F8D1AB6643500E919CB /* LXD_ObservedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD71F8C1AB6643500E919CB /* LXD_ObservedObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		EF324E221AB5298300069547 /* LXD_KeyValueObserveDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXD_KeyValueObserveDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF324E271AB5298300069547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF324E281AB5298300069547 /* LXD_KeyValueObserveDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXD_KeyValueObserveDemoTests.m; sourceTree = "<group>"; };
+		EF324E321AB52AFD00069547 /* NSObject+LXD_KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LXD_KVO.h"; sourceTree = "<group>"; };
+		EF324E331AB52AFD00069547 /* NSObject+LXD_KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LXD_KVO.m"; sourceTree = "<group>"; };
+		EFD71F8B1AB6643500E919CB /* LXD_ObservedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXD_ObservedObject.h; sourceTree = "<group>"; };
+		EFD71F8C1AB6643500E919CB /* LXD_ObservedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXD_ObservedObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 		EF324E001AB5298300069547 = {
 			isa = PBXGroup;
 			children = (
+				EFD71F8B1AB6643500E919CB /* LXD_ObservedObject.h */,
+				EFD71F8C1AB6643500E919CB /* LXD_ObservedObject.m */,
+				EF324E321AB52AFD00069547 /* NSObject+LXD_KVO.h */,
+				EF324E331AB52AFD00069547 /* NSObject+LXD_KVO.m */,
 				EF324E0B1AB5298300069547 /* LXD_KeyValueObserveDemo */,
 				EF324E251AB5298300069547 /* LXD_KeyValueObserveDemoTests */,
 				EF324E0A1AB5298300069547 /* Products */,
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD71F8D1AB6643500E919CB /* LXD_ObservedObject.m in Sources */,
 				EF324E151AB5298300069547 /* ViewController.m in Sources */,
 				EF324E121AB5298300069547 /* AppDelegate.m in Sources */,
 				EF324E0F1AB5298300069547 /* main.m in Sources */,
+				EF324E341AB52AFD00069547 /* NSObject+LXD_KVO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				EF324E2E1AB5298300069547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF324E2F1AB5298300069547 /* Build configuration list for PBXNativeTarget "LXD_KeyValueObserveDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				EF324E311AB5298300069547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
